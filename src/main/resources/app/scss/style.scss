@@ -245,3 +245,12 @@ hr{
     filter: blur(1px);
     opacity: .3;
 }
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-60%);
+    img{
+        width: 100px;
+    }
+}
