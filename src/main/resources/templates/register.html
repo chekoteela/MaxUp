@@ -68,3 +68,77 @@
                 <div class="burger__openable" id="burger">
                     <div class="center-line"></div>
                 </div>
+
+                <div class="lng-home header__title hide1100max">
+                    <h3 id="page_title">Регистрация</h3>
+                </div>
+
+<a class="logo" href="index.html">
+                    <img src="/images/logo.svg" th:href="@{/images/logo.svg}" alt="">
+                </a>
+
+            <div class="header__op">
+
+                <div class="header__balance">
+                    <a class="lng-balance-rub header__balance-link header-btn" href="addfunds.html" target="_top">Баланс: <span>0 грн.</span> </a>
+                </div>
+
+                <div class="header__cart">
+                    <a class="lng-buck header__cart-link header-btn" href="cart.html" target="_top">Корзина</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
+    <div class="blur-bg" id="blur">
+
+        <div class="container">
+            <div class="register__content">
+
+                <form class="reg-form form" action="#" id="reg_form">
+    
+                    <div class="lng-reg-title form__title">Заполните данные для входа</div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="username_reg" name="username_reg" required>
+                        <label class="lng-login form-label" for="username_reg">Логин</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-input" id="email_reg" name="email_reg" required>
+                        <label class="lng-email form-label" for="email_reg">Почта</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-input" id="password_reg" name="password_reg" required>
+                        <label class="lng-password form-label" for="password_reg">Пароль</label>
+                    </div>
+    
+                    <div class="form-group-check">
+                        <input disabled style="width:unset!important; vertical-align: middle; margin: 10px;" id="terms_accept" type="checkbox" name="terms_accept">
+                        <span class="lng-terms form-terms">Регистрируясь, вы принимаете <a class="lng-rules form-terms_rules" href="docs/ru_terms%20of%20service.zip">правила сервиса</a></span>
+                    </div>
+
+                    <button class="lng-reg-btn form-btn" id="submit_reg">Зарегистрироваться</button>
+    
+                </form>
+
+                <div class="register__login">
+                    <p class="register__login-text">
+                        У меня уже есть аккаунт,
+                        <a class="register__login-link" href="login.html">войти</a>
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+
+    </div>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>
