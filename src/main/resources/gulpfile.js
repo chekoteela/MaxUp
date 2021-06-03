@@ -27,6 +27,13 @@ function cleanTemp() {
     return del('templates')
 }
 
+function reverseBuild() {
+    return src([
+        'templates/*.html',
+    ], {base : 'templates'})
+       .pipe(dest('app'))
+}
+
 
 function images() {
     return src('app/images/**/*')
@@ -118,6 +125,8 @@ exports.image = images;
 exports.cleandist = cleanStatic;
 exports.cleantemp = cleanTemp;
 exports.buildhtml = buildHtml;
+exports.reversebuild = reverseBuild;
 
 exports.build = series(cleanStatic, cleanTemp, images, build, buildHtml);
+exports.reverse = series(reverseBuild);
 exports.default = parallel(styles, buildJs, browsersync, watching);
