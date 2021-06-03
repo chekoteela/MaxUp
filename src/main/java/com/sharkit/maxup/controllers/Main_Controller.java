@@ -11,7 +11,7 @@ public class Main_Controller {
     @GetMapping("/")
     public String greeting( Model model) {
         model.addAttribute("name", "name");
-        return "dist/index";
+        return "index";
     }
 }
 
