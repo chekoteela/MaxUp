@@ -6,6 +6,7 @@ const sass = require('gulp-sass'),
       concat = require('gulp-concat'),
       browserSync = require('browser-sync').create(),
       ssi = require('browsersync-ssi'),
+      bssi = require('gulp-ssi'),
       webpack = require('webpack-stream'),
       uglify = require('gulp-uglify-es').default,
       autoprefixer = require('gulp-autoprefixer'),
@@ -98,6 +99,8 @@ function styles() {
         .pipe(browserSync.stream())
 }
 
+
+
 function build() {
     return src([
         'app/css/style.min.css',
@@ -109,9 +112,11 @@ function build() {
 
 function buildHtml() {
     return src([
-        'app/*.html',
-    ], {base : 'app'})
-       .pipe(dest('templates'))
+        'app/**/*.html',
+        '!app/html/**/*'
+    ])
+    .pipe(bssi({root: 'app'}))
+    .pipe(dest('templates'))
 }
 
 function watching() {
