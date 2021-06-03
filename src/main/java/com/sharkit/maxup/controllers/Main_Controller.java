@@ -10,7 +10,7 @@ public class Main_Controller {
 
     @GetMapping("/")
     public String greeting( Model model) {
-        model.addAttribute("name", "name");
+        model.addAttribute("name", "100000");
         return "index";
     }
     @GetMapping("/register")
