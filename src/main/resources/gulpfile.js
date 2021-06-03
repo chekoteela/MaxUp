@@ -5,6 +5,7 @@ const {src, dest, watch, parallel, series} = require('gulp');
 const sass = require('gulp-sass'),
       concat = require('gulp-concat'),
       browserSync = require('browser-sync').create(),
+      ssi = require('browsersync-ssi'),
       webpack = require('webpack-stream'),
       uglify = require('gulp-uglify-es').default,
       autoprefixer = require('gulp-autoprefixer'),
@@ -14,8 +15,10 @@ const sass = require('gulp-sass'),
 function browsersync() {
     browserSync.init({
         server : {
-            baseDir: 'app/'
-        }
+            baseDir: 'app/',
+            middleware: ssi({ baseDir: 'app/', ext: '.html'})
+        },
+        // tunnel: 'yoursutename'
     });
 }
 

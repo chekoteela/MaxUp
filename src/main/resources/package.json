@@ -15,10 +15,12 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
+    "browsersync-ssi": "^0.2.4",
     "core-js": "^3.13.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
+    "gulp-ssi": "^0.1.5",
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.6.0",
     "webpack": "^5.38.1",
@@ -27,6 +29,7 @@
   "dependencies": {
     "del": "^6.0.0",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-imagemin": "^7.1.0"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rigger": "^0.5.8"
   }
 }
