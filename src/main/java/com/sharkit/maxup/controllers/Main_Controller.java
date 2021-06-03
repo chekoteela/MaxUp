@@ -13,5 +13,10 @@ public class Main_Controller {
         model.addAttribute("name", "name");
         return "index";
     }
+    @GetMapping("/register")
+    public String register( Model model) {
+        model.addAttribute("name", "name");
+        return "register";
+    }
 }
 
