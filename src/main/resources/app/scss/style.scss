@@ -281,7 +281,7 @@ hr{
     background-color: $green;
     padding: 20px 0;
     color: $text-white;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -350,7 +350,7 @@ hr{
     padding: 10px 0;
     border-radius: 4px;
     transition: .3s all;
-    margin: 20px 0 40px 0;
+    margin: 30px 0 35px 0;
     background-color: transparent;
 
     &:hover{
@@ -363,7 +363,7 @@ hr{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 550px;
+    margin-top: 540px;
 
     &-text{
         font-size: 15px;
