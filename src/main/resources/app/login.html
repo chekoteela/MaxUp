@@ -1,0 +1,45 @@
+<!--#include virtual="/html/head.html" -->
+
+                <div class="lng-home header__title hide1100max">
+                    <h3 id="page_title">Вход</h3>
+                </div>
+
+<!--#include virtual="/html/header-end.html" -->    
+
+    <div class="blur-bg" id="blur">
+
+        <div class="login__content">
+            <div class="container">
+
+                <form class="login__form form" id="login__form" action="#" novalidate>
+
+                    <div class="lng-reg-title form__title">Заполните данные для входа</div>
+    
+                    <div class="form-group">
+                        <input type="text" class="form-input _login _req" id="username_reg" name="username_reg" required>
+                        <label class="lng-login-mail form-label" for="username_reg">Логин / Почта</label>
+                        <div class="form-error">Необходимо заполнить пустое поле</div>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="password" class="form-input _password _req" id="password_reg" name="password_reg" required>
+                        <label class="lng-password form-label" for="password_reg" >Пароль <span class="password-span"></span></label>
+                        <div class="form-error">Необходимо заполнить пустое поле</div>
+                    </div>
+
+                    <button class="lng-reg-btn form-btn" id="submit_reg" type="submit" value="reset">Войти</button>
+
+                    <div class="register__login login__register">
+                        <p class="register__login-text">
+                            У меня нету аккаунта,
+                            <a class="register__login-link" href="register.html">зарегистрироваться</a>
+                        </p>
+                    </div>
+    
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+<!--#include virtual="/html/foot.html" -->

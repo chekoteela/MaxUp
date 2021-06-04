@@ -262,7 +262,13 @@ hr{
     height: 100vh;
 }
 
-.reg-form{
+.login__content{
+    padding-top: 50px;
+    position: relative;
+    height: 100vh;
+}
+
+.form{
     text-align: center;
     background-color: $text-white;
     color: $black;
@@ -340,6 +346,7 @@ hr{
     border: 2px solid $green;
     cursor: pointer;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
     width: 250px;
     padding: 10px 0;
@@ -439,4 +446,8 @@ hr{
 .form ._error:focus + .form-label,
 .form ._error:valid + .form-label {
     color: $red;
+}
+
+.login__register{
+    width: 100%;
 }

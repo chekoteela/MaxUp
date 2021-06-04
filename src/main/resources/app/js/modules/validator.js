@@ -4,14 +4,15 @@ const validator = (contactForm, formReq, errorText) => {
           reqs = document.querySelectorAll(formReq),
           text = document.querySelectorAll(errorText);
 
-    form.addEventListener('submit', formSend);
+    if(form !== null) {
+        form.addEventListener('submit', formSend);
 
-    async function formSend(e) {
-        e.preventDefault();
+        async function formSend(e) {
+            e.preventDefault();
+    
+            let errorCount = checkForm(reqs, text);
 
-        let errorCount = checkForm(reqs, text);
-
-        console.log(errorCount);
+        }
     }
 
 };
@@ -97,4 +98,4 @@ function removeError(input) {
     input.classList.remove('_error');
 }
 
-export  default validator;
+export default validator;
