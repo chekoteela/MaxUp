@@ -11,24 +11,24 @@
         <div class="container">
             <div class="register__content">
 
-                <form class="reg-form form" action="#" id="reg_form">
+                <form class="reg-form form" action="#" id="reg_form" novalidate>
     
                     <div class="lng-reg-title form__title">Заполните данные для входа</div>
                     
                     <div class="form-group">
-                        <input type="text" class="form-input" id="username_reg" name="username_reg" required>
+                        <input type="text" class="form-input _login _req" id="username_reg" name="username_reg" required>
                         <label class="lng-login form-label" for="username_reg">Логин*</label>
                         <div class="form-error">Необходимо заполнить пустое поле</div>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-input" id="email_reg" name="email_reg" required>
+                        <input type="email" class="form-input _email _req" id="email_reg" name="email_reg" required>
                         <label class="lng-email form-label" for="email_reg">Почта*</label>
                         <div class="form-error">Необходимо заполнить пустое поле</div>
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-input" id="password_reg" name="password_reg" required>
+                        <input type="password" class="form-input _password _req" id="password_reg" name="password_reg" required>
                         <label class="lng-password form-label" for="password_reg" >Пароль* <span class="password-span">(не менее 4 символов)</span></label>
                         <div class="form-error">Необходимо заполнить пустое поле</div>
                     </div>
@@ -43,7 +43,7 @@
                         
                       </div>
 
-                    <button class="lng-reg-btn form-btn" id="submit_reg">Зарегистрироваться</button>
+                    <button class="lng-reg-btn form-btn" id="submit_reg" type="submit" value="reset">Зарегистрироваться</button>
     
                     <div class="register__login">
                         <p class="register__login-text">

@@ -61,6 +61,7 @@ function buildJs() {
         './app/js/main.js'
     ])
         .pipe(webpack({
+            entry: ['babel-polyfill', './app/js/main.js'],
             mode: 'development',
             output: {
                 filename: 'script.min.js'
@@ -73,8 +74,8 @@ function buildJs() {
                         loader: 'babel-loader',
                         options: {
                             presets: [
-                                "@babel/preset-env"
-                            ]
+                                "@babel/preset-env",
+                            ],
                         }
                     },
                 }]
