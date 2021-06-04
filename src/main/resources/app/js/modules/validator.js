@@ -73,7 +73,7 @@ function checkForm(formReqs, text) {
             }
             if(input.value.length < 4) {
                 addError(input);
-                inputText.textContent = 'Пароль должен быть не меннее 4 символов';
+                inputText.textContent = 'Пароль должен быть не менее 4 символов';
                 inputText.style.display = 'block';
                 error++;
             }
