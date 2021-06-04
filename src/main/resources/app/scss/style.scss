@@ -405,4 +405,26 @@ hr{
 
 .form-group-check{
     position: relative;
+    margin-top: 20px;
+}
+
+.password-span{
+    opacity: 0.7;
+    text-transform: none;
+    font-size: 11px;
+}
+
+.form input:focus + .form-label .password-span,
+.form input:valid + .form-label .password-span {
+    opacity: 0;
+}
+
+.form-error{
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    color: $red;
+    font-weight: 500;
+    padding-left: 1px;
+    display: none;
 }
