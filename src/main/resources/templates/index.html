@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
@@ -59,36 +58,41 @@
             
         </div>
     </div>
-
+    
+    
     <header class="header">
         <div class="container">
-    
-           <div class="header__top">
-    
+
+        <div class="header__top">
+
                 <div class="burger__openable" id="burger">
                     <div class="center-line"></div>
                 </div>
-    
+
                 <div class="lng-home header__title hide1100max">
-                    <h3>Главная</h3>
+                    <h3 id="page_title">Главная</h3>
                 </div>
-    
-                <div class="header__op">
-    
-                    <div class="header__balance">
-                        <a class="lng-balance-rub header__balance-link header-btn" href="addfunds.html" target="_top">Баланс: <span>0 грн.</span> </a>
-                    </div>
-    
-                    <div class="header__cart">
-                        <a class="lng-buck header__cart-link header-btn" href="cart.html" target="_top">Корзина</a>
-                    </div>
-    
+
+<a class="logo" href="index.html">
+                    <img src="/images/logo.svg" th:href="@{/images/logo.svg}" alt="">
+                </a>
+
+            <div class="header__op">
+
+                <div class="header__balance">
+                    <a class="lng-balance-rub header__balance-link header-btn" href="addfunds.html" target="_top">Баланс: <span>0 грн.</span> </a>
                 </div>
-    
-           </div>
-    
+
+                <div class="header__cart">
+                    <a class="lng-buck header__cart-link header-btn" href="cart.html" target="_top">Корзина</a>
+                </div>
+
+            </div>
+
         </div>
-    </header>
+
+    </div>
+</header>
 
     <div class="blur-bg" id="blur">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto explicabo sapiente doloremque laudantium amet delectus nesciunt vel veritatis distinctio praesentium, iusto maxime repellendus minus excepturi, beatae, corrupti deserunt provident dolorum?
@@ -130,7 +134,7 @@
             Officia, praesentium voluptates ratione assumenda, hic sit expedita cum nisi, libero tempora distinctio debitis. Optio vitae dignissimos nesciunt facere repudiandae, rem tenetur numquam. Est veritatis eos, tempora nobis repellat aliquid!
             </p>
     </div>
-    
-    <script src="js/script.min.js"></script>
+
+<script src="js/script.min.js"></script>
 </body>
 </html>

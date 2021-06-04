@@ -1,4 +1,3 @@
-
 const openMenu = (button, menu, pre, blur) => {
 
     const btn = document.getElementById(button),
