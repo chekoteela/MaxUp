@@ -324,11 +324,6 @@ hr{
     top: 40%;
 }
 
-.form input:focus,
-.form input:valid {
-    border: 1px solid $green;
-}
-
 .form-terms{
     font-size: 13px;
     padding-left: 30px;
@@ -420,10 +415,28 @@ hr{
 
 .form-error{
     position: absolute;
-    bottom: 0;
-    font-size: 12px;
+    bottom: 5px;
+    font-size: 10px;
     color: $red;
     font-weight: 500;
     padding-left: 1px;
     display: none;
+}
+
+
+.form input:focus,
+.form input:valid {
+    border: 1px solid $green;
+}
+
+.form ._error,
+.form ._error:focus,
+.form ._error:valid {
+    border: 1px solid $red;
+}
+
+.form ._error + .form-label,
+.form ._error:focus + .form-label,
+.form ._error:valid + .form-label {
+    color: $red;
 }
