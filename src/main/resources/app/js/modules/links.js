@@ -6,7 +6,7 @@ const linkClick = (links) => {
     allLink.forEach((link) => {
 
         link.addEventListener('click', ()=>{
-            window.location.href = `${address}.html`;
+            window.location.href = `/${address}`;
         })
     })
 }
