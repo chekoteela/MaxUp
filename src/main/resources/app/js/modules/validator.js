@@ -29,30 +29,6 @@ const validator = (contactForm, formReq, errorText) => {
 
                 sendRequest('POST', path, json);
 
-                function sendRequest(method, url, body = null) {
-                    const headers = {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    };
-                    return fetch(url, {
-                        method: method,
-                        body: body,
-                        headers: headers
-                    }).then(response => {
-                        if(response.ok) {
-                            let message = response.json();
-                            window.location.href = 'index.html';
-                        }
-
-                        return response.json().then( error => {
-                            const e = new Error('Что-то пошло не так');
-                            e.data = error;
-                            throw e;
-                        })
-                    })
-                }
-                
-
             }
 
         }
@@ -139,6 +115,25 @@ function addError(input) {
 
 function removeError(input) {
     input.classList.remove('_error');
+}
+
+function sendRequest(method, url, body = null) {
+    const headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    };
+    return fetch(url, {
+        method: method,
+        body: body,
+        headers: headers
+    }).then(response => {
+        if(response.ok) {
+            let message = response.json();
+            window.location.href = '/';
+        } else {
+            window.location.href = '/register';
+        }
+    })
 }
 
 export default validator;
