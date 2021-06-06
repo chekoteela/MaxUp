@@ -13,10 +13,10 @@ public class Main_Controller {
         model.addAttribute("name", "100000");
         return "index";
     }
-    @GetMapping("/register")
-    public String register( Model model) {
-        model.addAttribute("name", "name");
-        return "register";
-    }
+//    @GetMapping("/register")
+//    public String register( Model model) {
+//        model.addAttribute("name", "name");
+//        return "register";
+//    }
 }
 
