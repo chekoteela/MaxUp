@@ -113,7 +113,7 @@ function build() {
 
 function buildHtml() {
     return src([
-        'app/**/*.html',
+        'app/*.html',
         '!app/html/**/*'
     ])
     .pipe(bssi({root: 'app'}))

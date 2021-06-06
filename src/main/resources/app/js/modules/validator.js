@@ -9,8 +9,51 @@ const validator = (contactForm, formReq, errorText) => {
 
         async function formSend(e) {
             e.preventDefault();
-    
+
             let errorCount = checkForm(reqs, text);
+
+            let data = new FormData(form);
+
+            if(errorCount === 0) {
+                
+                let object = {balance: '0'};
+
+                data.forEach((value, key) => object[key] = value);
+                
+                delete object.checkbox;
+            
+                let json = JSON.stringify(object);
+
+                const xhr = new XMLHttpRequest();
+                const path = '/register';
+
+                sendRequest('POST', path, json);
+
+                function sendRequest(method, url, body = null) {
+                    const headers = {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    };
+                    return fetch(url, {
+                        method: method,
+                        body: body,
+                        headers: headers
+                    }).then(response => {
+                        if(response.ok) {
+                            let message = response.json();
+                            window.location.href = 'index.html';
+                        }
+
+                        return response.json().then( error => {
+                            const e = new Error('Что-то пошло не так');
+                            e.data = error;
+                            throw e;
+                        })
+                    })
+                }
+                
+
+            }
 
         }
     }
