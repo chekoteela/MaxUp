@@ -128,10 +128,12 @@ function sendRequest(method, url, body = null) {
         headers: headers
     }).then(response => {
         if(response.ok) {
-            let message = response.json();
             window.location.href = '/';
         } else {
-            window.location.href = '/register';
+            let result = response.json();
+            if(result.message === 'a') {
+                 window.location.href = '/register';
+            }
         }
     })
 }
