@@ -27,7 +27,7 @@ const validator = (contactForm, formReq, errorText) => {
                 const xhr = new XMLHttpRequest();
                 const path = '/register';
 
-                sendRequest('POST', path, json);
+                sendRequest('POST', path, json, xhr);
 
             }
 
@@ -117,7 +117,7 @@ function removeError(input) {
     input.classList.remove('_error');
 }
 
-function sendRequest(method, url, body = null) {
+function sendRequest(method, url, body = null, xhr) {
     const headers = {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -133,7 +133,7 @@ function sendRequest(method, url, body = null) {
         } else {
             let result = response.json();
 
-            alert(result);
+            alert(xhr.responseText);
         }
     })
 }
