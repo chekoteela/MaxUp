@@ -35,12 +35,9 @@ const validator = (contactForm, formReq, errorText) => {
                     method: "POST",
                     body: json,
                     headers: headers,
-                }).then((response) => {
-                        if(response.ok) {
-                            let result = response.json();
-                            console.log(result.response);
-                            // window.location.href = '/';
-                        } 
+                }).then((response) => response.json())
+                .then((object) => {
+                    console.log(object.response);
                 })
             
                 // if(response.ok) {
