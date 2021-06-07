@@ -128,13 +128,12 @@ function sendRequest(method, url, body = null, xhr) {
         headers: headers
     }).then(response => {
         if(response.ok) {
-            
-            window.location.href = '/';
-        } else {
             let result = response.json();
-
-            alert(xhr.responseText);
+            window.location.href = '/';
         }
+    }).then(json => {
+        let encode = json.data;
+        alert(encode);
     })
 }
 
