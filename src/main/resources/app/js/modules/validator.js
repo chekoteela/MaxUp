@@ -26,8 +26,24 @@ const validator = (contactForm, formReq, errorText) => {
 
                 const xhr = new XMLHttpRequest();
                 const path = '/register';
+                const headers = {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                };
 
-                sendRequest('POST', path, json, xhr);
+                let response = await fetch(path, {
+                    method: "POST",
+                    body: json,
+                    headers: headers,
+                });
+            
+                if(response.ok) {
+                    let result = await response.json();
+                    alert(result);
+                    window.location.href = '/';
+                }
+
+                // sendRequest('POST', path, json, xhr);
 
             }
 
