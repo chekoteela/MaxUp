@@ -141,8 +141,8 @@ async function sendRequest(method, url, body = null, xhr) {
 
     if(response.ok) {
         let result = await response.json();
-        window.location.href = '/';
         alert(result);
+        window.location.href = '/';
     }
 }
 
