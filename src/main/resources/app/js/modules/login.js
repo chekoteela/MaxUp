@@ -28,8 +28,29 @@ const validatorLogin = (contactForm, formReq, errorText) => {
 
                 const xhr = new XMLHttpRequest();
                 const path = '/login';
+                const headers = {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                };
 
-                sendRequest('POST', path, json);
+                const request = fetch(path, {
+                    method: "POST",
+                    body: json,
+                    headers: headers,
+                })
+                    .then((response) => response.json())
+                    .then((object) => {
+                        return object.response;
+                    })
+                    .catch(error => console.log('error:', error));
+
+                if(request === 'OK') {
+                    window.location.href = '/';
+                } else if (request === "Email or password are invalid") {
+                    alert('Почта или пароль неправильный');
+                } else {
+                    alert('Ошибка');
+                }
             }
         }
     }
@@ -92,22 +113,5 @@ function removeError(input) {
     input.classList.remove('_error');
 }
 
-function sendRequest(method, path, body = null) {
-    const headers = {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    };
-    return fetch(url, {
-        method: method,
-        body: body,
-        headers: headers
-    }).then(response => {
-        if(response.ok) { 
-            window.location.href = '/';
-        } else {
-            let result = response.json();
-        }
-    })
-}
 
 export default validatorLogin;
