@@ -35,13 +35,19 @@ const validator = (contactForm, formReq, errorText) => {
                     method: "POST",
                     body: json,
                     headers: headers,
-                });
+                }).then(() => {
+                        if(response.ok) {
+                            let result = response.json();
+                            alert(result);
+                            window.location.href = '/';
+                        } 
+                    })
             
-                if(response.ok) {
-                    let result = await response.json();
-                    alert(result);
-                    window.location.href = '/';
-                }
+                // if(response.ok) {
+                //     let result = await response.json();
+                //     alert(result);
+                //     window.location.href = '/';
+                // }
 
                 // sendRequest('POST', path, json, xhr);
 
