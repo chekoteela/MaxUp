@@ -122,19 +122,27 @@ function sendRequest(method, url, body = null, xhr) {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
     };
-    return fetch(url, {
+    // return fetch(url, {
+    //     method: method,
+    //     body: body,
+    //     headers: headers
+    // }).then(response => {
+    //     if(response.ok) {
+    //         let result = response.json();
+    //         window.location.href = '/';
+    //     } 
+    // })
+
+    let response = fetch(url, {
         method: method,
         body: body,
-        headers: headers
-    }).then(response => {
-        if(response.ok) {
-            let result = response.json();
-            window.location.href = '/';
-        }
-    }).then(json => {
-        let encode = json.data;
-        alert(encode);
-    })
+        headers: headers,
+    });
+
+    if(response.ok) {
+        let result = response.json();
+        alert(result);
+    }
 }
 
 export default validator;
