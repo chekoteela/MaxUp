@@ -23,7 +23,7 @@ const validator = (contactForm, formReq, errorText) => {
                 let json = JSON.stringify(object);
 
                 const xhr = new XMLHttpRequest();
-                const path = 'RegisterController.java';
+                const path = '/register';
                 const headers = {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
@@ -36,7 +36,7 @@ const validator = (contactForm, formReq, errorText) => {
                 })
                     .then((response) => response.json())
                     .then((object) => {
-                        return object.response;
+                        return object;
                     })
                     .catch(error => console.log('error:', error));
 
