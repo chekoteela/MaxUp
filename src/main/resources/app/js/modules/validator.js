@@ -28,7 +28,7 @@ const validator = (contactForm, formReq, errorText) => {
                 const path = '/register';
                 const headers = {
                     'Content-Type': 'application/json',
-                    // 'Accept': 'application/json'
+                    'Accept': 'application/json'
                 };
 
                 const request = await fetch(path, {
