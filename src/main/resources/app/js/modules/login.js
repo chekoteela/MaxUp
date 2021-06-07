@@ -106,8 +106,6 @@ function sendRequest(method, path, body = null) {
             window.location.href = '/';
         } else {
             let result = response.json();
-
-            alert(result.response);
         }
     })
 }
