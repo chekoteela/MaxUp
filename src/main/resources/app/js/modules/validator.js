@@ -31,7 +31,7 @@ const validator = (contactForm, formReq, errorText) => {
                     'Accept': 'application/json'
                 };
 
-                const request = await fetch(path, {
+                const request = fetch(path, {
                     method: "POST",
                     body: json,
                     headers: headers,
