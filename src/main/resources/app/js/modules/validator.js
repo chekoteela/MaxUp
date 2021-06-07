@@ -117,7 +117,7 @@ function removeError(input) {
     input.classList.remove('_error');
 }
 
-function sendRequest(method, url, body = null, xhr) {
+async function sendRequest(method, url, body = null, xhr) {
     const headers = {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -133,14 +133,15 @@ function sendRequest(method, url, body = null, xhr) {
     //     } 
     // })
 
-    let response = fetch(url, {
+    let response = await fetch(url, {
         method: method,
         body: body,
         headers: headers,
     });
 
     if(response.ok) {
-        let result = response.json();
+        let result = await response.json();
+        window.location.href = '/';
         alert(result);
     }
 }
