@@ -37,7 +37,7 @@ const validator = (contactForm, formReq, errorText) => {
                     headers: headers,
                 }).then((response) => response.json())
                 .then((object) => {
-                    console.log(object.response);
+                    console.log(object);
                 })
             
                 // if(response.ok) {
