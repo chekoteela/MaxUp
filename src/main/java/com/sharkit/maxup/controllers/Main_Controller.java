@@ -19,7 +19,7 @@ public class Main_Controller {
 
     @GetMapping("/login")
     public String login( Model model) {
-        return "register";
+        return "login";
     }
 }
 

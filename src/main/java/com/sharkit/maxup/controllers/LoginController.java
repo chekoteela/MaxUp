@@ -2,7 +2,6 @@ package com.sharkit.maxup.controllers;
 
 import com.sharkit.maxup.entity.UsersEntity;
 import com.sharkit.maxup.exception.EmailOrPasswordAreInvalid;
-import com.sharkit.maxup.exception.UserWithThisEmailMissing;
 import com.sharkit.maxup.services.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
