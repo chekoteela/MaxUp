@@ -86,7 +86,7 @@ function checkForm(formReqs, text) {
 
             if (loginTest(input)) {
                 addError(input);
-                inputText.textContent = 'Неправильные данные';
+                inputText.textContent = 'Неправильный ввод';
                 inputText.style.display = 'block';
                 error++;
             }
@@ -94,7 +94,7 @@ function checkForm(formReqs, text) {
 
             if(passwordTest(input) || input.value.length < 4) {
                 addError(input);
-                inputText.textContent = 'Неправильные данные';
+                inputText.textContent = 'Неправильный ввод';
                 inputText.style.display = 'block';
                 error++;
             }

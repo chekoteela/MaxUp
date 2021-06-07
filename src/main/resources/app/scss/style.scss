@@ -452,3 +452,37 @@ hr{
 .login__register{
     width: 100%;
 }
+
+.product__items{
+    padding-top: 100px;
+}
+
+.product__item{
+    width: calc(100%/7)!important;
+    position: relative;
+    width: 100%;
+
+    img{
+        width: 100%;
+    }
+
+}
+
+.product__item-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75,75,75,.5);
+    h3{
+        transform: translateY(20px);
+        background: rgba(0,0,0,.2);
+        color: $text-white;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 10px;
+    }
+}

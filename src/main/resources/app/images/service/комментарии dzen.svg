@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Направляющие" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 60 85" enable-background="new 0 0 60 85" xml:space="preserve">
+<g id="dzen_1_">
+	<rect id="dzen" fill="#13254D" width="60" height="85"/>
+	<circle display="none" fill="#FF102F" cx="29.9" cy="42.6" r="16.3"/>
+	<g id="Слой_6" display="none">
+		<polygon display="inline" fill="#FFFFFF" points="24,36.1 24,32.3 35.7,36.4 35.7,40 		"/>
+	</g>
+	<g id="Слой_7" display="none">
+		<polygon display="inline" fill="#FFFFFF" points="24,45.4 24,49.1 35.7,53 35.7,49.4 		"/>
+	</g>
+	<g id="Слой_8" display="none">
+		<polygon display="inline" fill="#CDD0CF" points="31.8,38.7 24,45.4 27.9,46.8 35.7,40 		"/>
+	</g>
+</g>
+<g id="комменты">
+	<g>
+		<path fill="#FFFFFF" d="M30,57.6l-4.3-4.3H13.6V28.1h32.8v25.2H34.3L30,57.6z M16.1,50.8h10.6L30,54l3.3-3.3h10.6V30.6H16.1V50.8z
+			"/>
+	</g>
+	<g>
+		<rect x="21.2" y="34.4" fill="#FFFFFF" width="17.6" height="2.5"/>
+	</g>
+	<g>
+		<rect x="21.2" y="39.4" fill="#FFFFFF" width="17.6" height="2.5"/>
+	</g>
+	<g>
+		<rect x="21.2" y="44.5" fill="#FFFFFF" width="12.6" height="2.5"/>
+	</g>
+</g>
+</svg>
