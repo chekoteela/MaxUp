@@ -36,13 +36,14 @@ const validator = (contactForm, formReq, errorText) => {
                     body: json,
                     headers: headers,
                 }).then((response) => response.json())
-                .then((object) => {
-                    return object.qwerty;
-                })
+                    .then((object) => {
+                        return object.response;
+                    })
 
-                const printReq = async () =>{
-                    const a = await request;
-                    console.log(a);
+                const printReq = () => {
+                    request.then((a) => {
+                        console.log(a);
+                    })
                 }
 
                 printReq();
