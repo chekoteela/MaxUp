@@ -40,15 +40,16 @@ const validator = (contactForm, formReq, errorText) => {
                     })
                     .catch(error => console.log('error:', error));
 
-                // const printReq = () => {
-                //     request.then((a) => {
-                //         console.log(a);
-                //     })
-                // }
+                text[1].style.display = 'none';
 
-                // printReq();
-
-                console.log(request);
+                if(request === 'OK') {
+                    window.location.href = '/';
+                } else if (request === "user already exist") {
+                    text[1].textContent = 'Такой пользователь уже существует';
+                    text[1].style.display = 'block';
+                } else {
+                    alert('Ошибка');
+                }
 
             }
 
