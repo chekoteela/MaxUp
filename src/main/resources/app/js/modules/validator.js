@@ -17,15 +17,13 @@ const validator = (contactForm, formReq, errorText) => {
             if(errorCount === 0) {
                 
                 let object = {balance: '0'};
-
                 data.forEach((value, key) => object[key] = value);
-                
                 delete object.checkbox;
-            
+
                 let json = JSON.stringify(object);
 
                 const xhr = new XMLHttpRequest();
-                const path = '/register';
+                const path = 'RegisterController.java';
                 const headers = {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
@@ -35,26 +33,23 @@ const validator = (contactForm, formReq, errorText) => {
                     method: "POST",
                     body: json,
                     headers: headers,
-                }).then((response) => response.json())
+                })
+                    .then((response) => response.json())
                     .then((object) => {
                         return object.response;
                     })
+                    .catch(error => console.log('error:', error));
 
-                const printReq = () => {
-                    request.then((a) => {
-                        console.log(a);
-                    })
-                }
-
-                printReq();
-            
-                // if(response.ok) {
-                //     let result = await response.json();
-                //     alert(result);
-                //     window.location.href = '/';
+                request.then((a) => {
+                    console.log(a);
+                })
+                // const printReq = () => {
+                //     request.then((a) => {
+                //         console.log(a);
+                //     })
                 // }
 
-                // sendRequest('POST', path, json, xhr);
+                // printReq();
 
             }
 
@@ -142,35 +137,6 @@ function addError(input) {
 
 function removeError(input) {
     input.classList.remove('_error');
-}
-
-async function sendRequest(method, url, body = null, xhr) {
-    const headers = {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    };
-    // return fetch(url, {
-    //     method: method,
-    //     body: body,
-    //     headers: headers
-    // }).then(response => {
-    //     if(response.ok) {
-    //         let result = response.json();
-    //         window.location.href = '/';
-    //     } 
-    // })
-
-    let response = await fetch(url, {
-        method: method,
-        body: body,
-        headers: headers,
-    });
-
-    if(response.ok) {
-        let result = await response.json();
-        alert(result);
-        window.location.href = '/';
-    }
 }
 
 export default validator;
