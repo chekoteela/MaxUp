@@ -37,7 +37,10 @@ const validator = (contactForm, formReq, errorText) => {
                     headers: headers,
                 }).then((response) => response.json())
                 .then((object) => {
-                    return object.response;
+                    return object;
+                })
+                .catch(err => {
+                    console.error(err);
                 })
 
                 const printReq = async () =>{
