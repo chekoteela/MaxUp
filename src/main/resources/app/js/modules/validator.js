@@ -133,9 +133,7 @@ function sendRequest(method, url, body = null) {
         } else {
             let result = response.json();
 
-            if(result.message === 'a') {
-                 window.location.href = '/register';
-            }
+            alert(result.message);
         }
     })
 }

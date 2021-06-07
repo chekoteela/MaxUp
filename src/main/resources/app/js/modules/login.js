@@ -12,7 +12,25 @@ const validatorLogin = (contactForm, formReq, errorText) => {
     
             let errorCount = checkForm(reqs, text);
     
-            console.log(errorCount);
+            let data = new FormData(form);
+
+            if(errorCount === 0) {
+
+                let object = {
+                    balance: '0',
+                }
+
+                data.forEach((value, key) => {
+                    object[key] = value;
+                });
+
+                let json = JSON.stringify(object);
+
+                const xhr = new XMLHttpRequest();
+                const path = '/login';
+
+                sendRequest('POST', path, json);
+            }
         }
     }
 }
@@ -72,6 +90,26 @@ function addError(input) {
 
 function removeError(input) {
     input.classList.remove('_error');
+}
+
+function sendRequest(method, path, body = null) {
+    const headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    };
+    return fetch(url, {
+        method: method,
+        body: body,
+        headers: headers
+    }).then(response => {
+        if(response.ok) { 
+            window.location.href = '/';
+        } else {
+            let result = response.json();
+
+            alert(result.message);
+        }
+    })
 }
 
 export default validatorLogin;
