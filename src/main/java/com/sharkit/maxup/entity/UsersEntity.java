@@ -19,6 +19,9 @@ public class UsersEntity {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private List<BasketEntity> basket;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "userE")
+    private List<ResponseEntity> response;
+
     public Long getId() {
         return id;
     }
