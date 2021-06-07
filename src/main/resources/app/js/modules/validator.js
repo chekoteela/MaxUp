@@ -40,13 +40,15 @@ const validator = (contactForm, formReq, errorText) => {
                     })
                     .catch(error => console.log('error:', error));
 
-                const printReq = () => {
-                    request.then((a) => {
-                        console.log(a);
-                    })
-                }
+                // const printReq = () => {
+                //     request.then((a) => {
+                //         console.log(a);
+                //     })
+                // }
 
-                printReq();
+                // printReq();
+
+                console.log(request);
 
             }
 
