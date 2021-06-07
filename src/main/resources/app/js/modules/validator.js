@@ -27,8 +27,8 @@ const validator = (contactForm, formReq, errorText) => {
                 const xhr = new XMLHttpRequest();
                 const path = '/register';
                 const headers = {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
+                    'Content-type': 'text/plain',
+                    // 'Accept': 'application/json'
                 };
 
                 const request = await fetch(path, {
