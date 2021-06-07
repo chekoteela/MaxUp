@@ -28,7 +28,7 @@ const validator = (contactForm, formReq, errorText) => {
                 const path = '/register';
                 const headers = {
                     'Content-Type': 'application/json',
-                    'Accept': 'text/plain'
+                    'Accept': 'application/json'
                 };
 
                 const request = await fetch(path, {
@@ -44,6 +44,8 @@ const validator = (contactForm, formReq, errorText) => {
                     const a = await request;
                     console.log(a);
                 }
+
+                printReq();
             
                 // if(response.ok) {
                 //     let result = await response.json();
