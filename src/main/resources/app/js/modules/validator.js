@@ -31,17 +31,17 @@ const validator = (contactForm, formReq, errorText) => {
                     'Accept': 'application/json'
                 };
 
-                let response = await fetch(path, {
+                await fetch(path, {
                     method: "POST",
                     body: json,
                     headers: headers,
-                }).then(() => {
+                }).then((response) => {
                         if(response.ok) {
                             let result = response.json();
-                            alert(result);
+                            // alert(result);
                             window.location.href = '/';
                         } 
-                    })
+                })
             
                 // if(response.ok) {
                 //     let result = await response.json();
