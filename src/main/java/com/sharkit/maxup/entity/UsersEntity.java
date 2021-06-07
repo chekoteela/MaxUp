@@ -1,6 +1,7 @@
 package com.sharkit.maxup.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "usr")
@@ -14,6 +15,9 @@ public class UsersEntity {
     private String email;
     private float balance;
     private String login, password;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private List<BasketEntity> basket;
 
     public Long getId() {
         return id;
