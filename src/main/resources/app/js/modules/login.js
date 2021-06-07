@@ -107,7 +107,7 @@ function sendRequest(method, path, body = null) {
         } else {
             let result = response.json();
 
-            alert(result.message);
+            alert(result);
         }
     })
 }
