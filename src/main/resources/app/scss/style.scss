@@ -522,10 +522,9 @@ hr{
         padding: 10px;
         transition: .4s all;
     }
-}
-
-.item__overlay-subtitle {
-    transform: translateY(45px);
+    .item__overlay-subtitle{
+        transform: translateY(45px);
+    }
 }
 
 
