@@ -634,6 +634,8 @@ hr{
         padding-left: 20px;
         display: inline-block;
         position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
         &::before{
             content: '';
@@ -649,7 +651,8 @@ hr{
 .post__content-item{
     padding-top: 50px;
     padding-bottom: 50px;
-    &:nth-child(2) {
+    &:nth-child(2),
+    &:nth-child(4) {
         background-color: #ddd;
     }
 }
