@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.svg" th:href="@{/images/logo.svg}" type="image/svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Max Up  | Продвижение и накрутка в социальных сетях: SMM маркетинг, сервис PR</title>
+    <link rel="stylesheet" href="css/style.min.css" th:href="@{/css/style.min.css}">
+    <meta name="description" content="Сервис по накрутке MRPOPULAR предлагает качественное продвижение в социальных сетях. SMM раскрутка по низким ценам."/>
+</head>
+<body>
+
+    <div class="pre-b" id="pre">
+        <div class="burger__menu" id="sidebar">
+    
+    <div class="burger-hr">
+        <a class="lng-home burger__menu-link" href="/index" target="_top"><i class="fas fa-home"></i>Главная</a>
+        <a class="lng-socail burger__menu-link" href="/socialnetworks" target="_top"><i class="fas fa-hashtag"></i>Социальные сети</a>
+        <a class="lng-rate burger__menu-link" href="/rating" target="_top"><i class="fas fa-hashtag"></i>Рейтинги и отзывы</a>
+        
+    </div>
+
+    <div class="burger-hr">
+        <a class="lng-buck burger__menu-link" href="/cart" target="_top"><i class="fas fa-shopping-cart"></i>Корзина</a>
+        <a class="lng-subsc burger__menu-link" href="/subscription" target="_top"><i class="fas fa-sync"></i>Подписки</a>
+        <a class="lng-history burger__menu-link" href="/history" target="_top"><i class="fas fa-history"></i>История заказов</a>
+        <a class="lng-balance burger__menu-link" href="/addfunds" target="_top"><i class="far fa-credit-card"></i>Пополнить баланс</a>
+        <a class="lng-promo burger__menu-link" href="/promocode" target="_top"><i class="fas fa-money-bill-wave"></i>Активировать промокод</a>
+    </div>
+
+    <div class="burger-hr">
+        <a class="lng-partner burger__menu-link" target="_top" href="/partnership"><i class="fas fa-dollar-sign"></i>Партнерская программа</a>
+        <a class="lng-free burger__menu-link" target="_top" href="/getfree"><i class="fas fa-hand-holding-usd"></i>Бесплатное продвижение</a>
+    </div>
+   
+    <div class="burger-hr">
+        <a class="lng-help burger__menu-link" target="_top" href="/support"><i class="fas fa-question"></i>Служба поддержки</a>
+        <a class="lng-info burger__menu-link" target="_top" href="/info"><i class="far fa-file-alt"></i>Информация</a>
+        <a class="lng-feedback burger__menu-link" target="_top" href="/reviews"><i class="far fa-comment-alt"></i>Отзывы</a>    
+    </div>
+    
+    <div class="burger-hr">
+        <a class="lng-instr burger__menu-link" target="_top" href="/tools"><i class="fas fa-wrench"></i>Инструменты</a>   
+    </div>
+    
+    <div class="burger-hr">
+        <a class="burger__menu-link" target="_top" href="/api"><i class="fas fa-terminal"></i>Public API</a>
+        <a class="burger__menu-link" target="_top" href="/resell"><i class="fas fa-terminal"></i>Reseller API</a> 
+    </div>
+    
+    <div class="burger-hr">
+        <a class="lng-login burger__menu-link login green-link"><i class="fas fa-sign-in-alt"></i>Вход</a>
+        <a class="lng-registr burger__menu-link register green-link"><i class="fas fa-sign-in-alt"></i>Регистрация</a>
+    </div>
+    
+</div>
+        <!-- #include virtual="/html/menu-front.html" -->
+    </div>
+    
+    
+    <header class="header">
+        <div class="container">
+
+        <div class="header__top">
+
+                <div class="burger__openable" id="burger">
+                    <div class="center-line"></div>
+                </div>
+
+<div class="lng-home header__title hide1100max">
+    <h3 id="page_title"><span>Главная</span> - <span>Instagram</span> - Подписчики</h3>
+</div>
+
+<a class="logo" href="/index">
+                    <img src="/images/logo.svg" th:href="@{/images/logo.svg}" alt="">
+                </a>
+
+            <div class="header__op">
+
+                <div class="header__balance">
+                    <a class="lng-balance-rub header__balance-link header-btn" href="/addfunds" target="_top">Баланс: <span>0 грн</span> </a>
+                </div>
+
+                <div class="header__cart">
+                    <a class="lng-buck header__cart-link header-btn" href="/cart" target="_top">Корзина</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
+<div class="blur-bg" id="blur">
+    <div class="product__inner">
+
+        <div class="product__items">
+
+            <div class="product__item">
+                <div class="product__item-block">
+                    <a class="product__item-link" href="/instagram-followers-ol">
+                        <img src="./images/service/лайки instagram.svg"  th:src = "@{/images/service/лайки instagram.svg}" alt="insta-subscribe">
+                        <div class="item__overlay">
+                            <h3 class="item__overlay-title">офферы, низкое качество</h3>
+                            <h3 class="item__overlay-subtitle">0.12 грн.</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__item-block">
+                    <a class="product__item-link" href="/instagram-followers">
+                        <img src="./images/service/лайки instagram.svg"  th:src = "@{/images/service/лайки instagram.svg}" alt="insta-subscribe">
+                        <div class="item__overlay">
+                            <h3 class="item__overlay-title">офферы, среднее качество</h3>
+                            <h3 class="item__overlay-subtitle">0.24 грн.</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__item-block">
+                    <a class="product__item-link" href="/instagram-followers">
+                        <img src="./images/service/лайки instagram.svg"  th:src = "@{/images/service/лайки instagram.svg}" alt="insta-subscribe">
+                        <div class="item__overlay">
+                            <h3 class="item__overlay-title">офферы, высокое качество</h3>
+                            <h3 class="item__overlay-subtitle">0.36 грн.</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__item-block">
+                    <a class="product__item-link" href="/instagram-followers">
+                        <img src="./images/service/лайки instagram.svg"  th:src = "@{/images/service/лайки instagram.svg}" alt="insta-subscribe">
+                        <div class="item__overlay">
+                            <h3 class="item__overlay-title">живые, низкое качество</h3>
+                            <h3 class="item__overlay-subtitle">0.72 грн.</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__item-block">
+                    <a class="product__item-link" href="/instagram-followers">
+                        <img src="./images/service/лайки instagram.svg"  th:src = "@{/images/service/лайки instagram.svg}" alt="insta-subscribe">
+                        <div class="item__overlay">
+                            <h3 class="item__overlay-title">живые, среднее качество</h3>
+                            <h3 class="item__overlay-subtitle">2.16 грн.</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__item-block">
+                    <a class="product__item-link" href="/instagram-followers">
+                        <img src="./images/service/лайки instagram.svg"  th:src = "@{/images/service/лайки instagram.svg}" alt="insta-subscribe">
+                        <div class="item__overlay">
+                            <h3 class="item__overlay-title">живые, высокое качество</h3>
+                            <h3 class="item__overlay-subtitle">3.96 грн.</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="post__inner">
+
+            <div class="post__title">
+                <h1 class="post__header">Накрутка лайков в Инстаграме</h1>
+            </div>
+
+            <div class="post__content">
+
+                <div class="post__content-item">
+                    
+                    <div class="post__item-no">
+                        01
+                    </div>
+                    <div class="post__item-title">
+                        <h3>Накрутка лайков: зачем она нужна</h3>
+                    </div>
+                    <div class="post__item-text">
+                        <p>
+                            Для начала немного справочной информации, при нашем уровне образования молодежи это, по крайней мере, не помешает. Лайк (от англ. like - “нравится”) - распространенная в соцсетях форма отклика на вашу публикацию от других пользователей. В Инстаграм предусмотрен один вариант фидбека - отметка в виде сердечка, которая говорит о вашей заинтересованности публикацией. Но накрутка лайков в Инстаграме служит не только для повышения самооценки авторов публикаций. Достаточное количество сердечек под постом гарантирует ему показ в ленте пользователей, которые даже не подписаны на аккаунт создателя. Что это значит? Все просто: чтобы вашу публикацию в Инстаграм увидело как можно больше людей, ее нужно обязательно снабдить большим числом положительных откликов, что проще сделать накруткой.
+                        </p>
+                        <p>
+                            Не стоит забывать и чисто психологический факт - люди охотней просматривают пост в Инстаграм с накруткой сотен лайков, это можно уподобить тому, как прирастает уже существующая очередь новыми покупателями. Они даже и не планировали приобретать товар, но сам факт собравшихся людей просто их заинтересовал. Существуют и значительные бонусные последствия от такого процесса - немало людей, просмотревших пост, при условии что фото/видео им понравилось, захотят подписаться на ваш аккаунт. Что скажется положительно на охвате аудитории вашей следующей публикацией, опять же, если она будет привлекательной.
+                        </p>
+                        <span>
+                            Некоторые из этих новых подписчиков поделятся вашим фото, что в свою очередь станет причиной появления новых подписчиков. Снежный ком накрутки лайков обязательно будет расти, но обязательным условием этого процесса является качество снега, то есть вашего контента.
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="post__content-item">
+
+                    <div class="post__item-no">
+                        02
+                    </div>
+                    <div class="post__item-title">
+                        <h3>Почему именно Инстаграм?</h3>
+                    </div>
+                    <div class="post__item-text">
+                        <p> 
+                            Инстаграм показывает просто феноменальные темпы роста. За последний год аудитория этой соцсети выросла почти на 40%, обогнав в два раза все крупные сервисы виртуального общения. Более того, сам формат платформы и особенности ее сообщества просто идеально подходят для продвижения какого-либо модного продукта. Поэтому и запрос на накрутку Инстаграм лайков последнее время резко актуализировался. А если принять во внимание недавнее заявление о планирующихся нововведениях, то, пожалуй, для продажи товара перспективней соцсети просто не найти. Да и сейчас показатели Инстаграм достаточно убедительны:
+                        </p>
+                        <span>
+                            <i>на середину 2018 года Инстаграм насчитывал около миллиарда пользователей</i>
+                        </span>
+                        <span>
+                            <i>
+                                за последние пару лет количество случаев использования приложения и подписка на него увеличились вдвое
+                            </i>
+                        </span>
+                        <span>
+                            <i>
+                                на серверах Инстаграма хранится уже более 50 млрд. фотографий
+                            </i>
+                        </span>
+                        <span>
+                            <i>
+                                загружается около 90 миллионов фото/видео файлов в день
+                            </i>
+                        </span>
+                        <span>
+                            <i>
+                                ежесуточно в Инстаграм ставится около 3 млрд. лайков
+                            </i>
+                        </span>
+                        <span>
+                            <i>
+                                пишется около миллиарда комментариев
+                            </i>
+                        </span>
+                        
+                        <p>
+                            Надеемся такая внушительная статистика вас неотвратимо убедила в перспективах этой яркой и модной соцсети. Позволим вам еще раз напомнить непреложную истину: эффективное продвижение в Инстаграме невозможно без “стартового капитала”, таковым служат лайки. Значит их накрутка просто необходима. В противном случае ваш, пусть даже трижды гениальный контент, никто не увидит. Внушительную число сердечек на начальную раскрутку вам с удовольствием предоставит MRPOPULAR, причем за весьма скромное вознаграждение. Но если вы все же преисполнены иллюзиями и излишним энтузиазмом, то можете попытаться совершить накрутку достаточного количества лайков в Инстаграме с нуля. Извольте, вот вам несколько советов как это сделать. Наверное многие озадачатся вопросом, почему сервис по продвижению в соцсетях дает альтернативу своим услугам. Отвечаем, чем быстрее вы попробуете самостоятельно раскрутится тем скорее вы осознаете реальность и обратитесь в MRPOPULAR. Итак, вот советы для самопродвиженцев.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="post__content-item">
+
+                    <div class="post__item-no">
+                        03
+                    </div>
+                    <div class="post__item-title">
+                        <h3>Секреты самостоятельного продвижения посредствам отметок “нравится”</h3>
+                    </div>
+                    <div class="post__item-text">
+                        <p>
+                            <b>
+                                Оригинальный контент.
+                            </b>Не забывайте, вы решили продвинуться в Инстаграме, а эта соцсеть отличается динамичностью и пестротой. Будьте яркими и эпатажными, создавайте контент, соответствующий активному и продвинутому сообществу. Поработайте над оформлением своей странички, сделайте все максимально качественно и привлекательно. Фото/видео контент должен быть “дорогим”. Накрутки внушительного числа лайков не будет, если вы используете на своей страничке необрезанные и неотредактированные ролики, снятые смартфоном. Еще большие требования по качеству выдвигаются к фотографиям. К счастью, Инстаграм располагает встроенными фильтрами и редактором, но в большинстве случаев профессиональная техника и мощный фото-видео редактор — залог успешной накрутки лайков в Инстаграм.
+                        </p>
+                        
+                        <span>
+                            <i>Соответствующим образом оформите свою страничку. Кроме вышеописанных приемов, которые так же следует применить к своему заглавному фото, уделите внимание описанию Текст должен быть информативным, выражать суть и направление странички, и, естественно, написан в соответствии с правилами русской словесности.</i>
+                        </span>
+
+                        <p>
+                            <b>
+                                Активность.
+                            </b>Это понятие в контексте продвижения на платформе любой соцсети означает то, что соблюдение вышеописанных советов недостаточно для уверенной накрутки сердечек. Нужно активно взаимодействовать с остальными членами сообщества. Не поленитесь сходить на популярные странички и отреагировать на расположенные там публикации. Причем только лайков будет мало. Совсем нелишними станут осмысленные комментарии под постами. Люди это обязательно оценят. Вскоре, как это принято в большинстве соцсетей, вас удостоят ответным визитом с обязательной подпиской на ваш аккаунт. А после этого порции свежих лайков под вашими публикациями не избежать.
+                        </p>
+                        <p>
+                            <b>
+                                Время активности.
+                            </b>Многие часто не берут во внимание временной фактор активности. В результате - удивление от того, что накрутка даже до тысячи лайков идет медленно несмотря на отличный контент. Ответ прост — Инстаграм никогда не спит, в отличие от людей. К сожалению, мы по природе наделены этим физиологическим недостатком. Поэтому старайтесь публиковать посты в “часы пик”, когда большинство людей с интересом разглядывают ленту, выискивая чтобы такого посмотреть. Только тогда ваш креатив сможет оценить большое количество пользователей, только тогда накрутка лайков может стать успешной. Определение насколько время удачное целиком лежит только на вас. Тут нужно учитывать часовой пояс вашего региона, традиционную активность местного населения и тому подобное.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="post__content-item">
+
+                    <div class="post__item-no">
+                        04
+                    </div>
+                    <div class="post__item-title">
+                        <h3>Накрутка с MRPOPULAR</h3>
+                    </div>
+                    <div class="post__item-text">
+                        <p>
+                            Надеемся что мы немного просветили вас по теме самостоятельной накрутки стартовых лайков в Инстаграм. На этом пожалуй все. Но на прощание еще раз позволим себе напомнить о существовании нашего сервиса по продвижению в соцсетях. MRPOPULAR без труда сделает за вас всю обозначенную выше работу. Вы не потеряете время, которое можете потратить для совершенствования самого контента, поиска собственного стиля и/или просто приятного общения со своими друзьями на пространстве этой замечательной социальной сети. Но помните, встречают по одежке, которой служит не только ваш аватар, но, в большей степени, таким парадным нарядом является внушительная цифра лайков под вашими публикациями. Их накрутку мы обеспечим быстро и недорого.
+                        </p>                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>
