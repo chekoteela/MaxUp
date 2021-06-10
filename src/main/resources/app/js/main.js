@@ -10,5 +10,5 @@ window.addEventListener('DOMContentLoaded', () => {
     validatorLogin('login__form', '._req', '.form-error');
     linkClick('.register');
     linkClick('.login');
-    front();
+    // front();
 });
