@@ -18,7 +18,7 @@ const validatorLogin = (contactForm, formReq, errorText) => {
 
                 let object = {
                     balance: '0',
-                }
+                };
 
                 data.forEach((value, key) => {
                     object[key] = value;
@@ -49,7 +49,7 @@ const validatorLogin = (contactForm, formReq, errorText) => {
                 } else if (request === "Email or password are invalid") {
                     alert('Почта или пароль неправильный');
                 } else {
-                    alert('Ошибка');
+                    alert(request);
                 }
             }
         }
