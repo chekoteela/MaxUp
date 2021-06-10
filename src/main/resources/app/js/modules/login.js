@@ -25,7 +25,7 @@ const validatorLogin = (contactForm, formReq, errorText) => {
                 });
 
                 let json = JSON.stringify(object);
-
+                
                 const xhr = new XMLHttpRequest();
                 const path = '/login';
                 const headers = {
@@ -49,7 +49,8 @@ const validatorLogin = (contactForm, formReq, errorText) => {
                 } else if (request.response === "Email or password are invalid") {
                     alert('Почта или пароль неправильный');
                 } else {
-                    alert(request.response);
+                    alert(request);
+                    console.log(request);
                 }
             }
         }

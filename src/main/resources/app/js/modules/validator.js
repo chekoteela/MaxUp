@@ -48,7 +48,8 @@ const validator = (contactForm, formReq, errorText) => {
                     text[1].textContent = 'Такой пользователь уже существует';
                     text[1].style.display = 'block';
                 } else {
-                    alert('Ошибка');
+                    alert(request);
+                    console.log(request);
                 }
 
             }
