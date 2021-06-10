@@ -75,18 +75,18 @@
                     <h3 id="page_title">Главная</h3>
                 </div>
 
-<a class="logo" href="index.html">
+<a class="logo" href="/index">
                     <img src="/images/logo.svg" th:href="@{/images/logo.svg}" alt="">
                 </a>
 
             <div class="header__op">
 
                 <div class="header__balance">
-                    <a class="lng-balance-rub header__balance-link header-btn" href="addfunds.html" target="_top">Баланс: <span>0 грн.</span> </a>
+                    <a class="lng-balance-rub header__balance-link header-btn" href="/addfunds" target="_top">Баланс: <span>0 грн</span> </a>
                 </div>
 
                 <div class="header__cart">
-                    <a class="lng-buck header__cart-link header-btn" href="cart.html" target="_top">Корзина</a>
+                    <a class="lng-buck header__cart-link header-btn" href="/cart" target="_top">Корзина</a>
                 </div>
 
             </div>
@@ -98,6 +98,564 @@
 
     <div class="blur-bg" id="blur">
         
+        <div class="product__inner">
+
+                <div class="product__items">
+
+                    <div class="product__item">
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/instagram">
+                                <img src="./images/service/instagram.svg" th:src = "@{/images/service/instagram.svg}" alt="instagram">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Instagram</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">                                    
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/vk">
+                                <img src="./images/service/vk.svg" th:src = "@{/images/service/vk.svg}" alt="vk">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Вконтакте</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">                 
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/youtube">
+                                <img src="./images/service/youtube.svg" th:src = "@{/images/service/youtube.svg}" alt="youtube">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">YouTube</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">                 
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/tt">
+                                <img src="./images/service/tt.svg" th:src = "@{/images/service/tt.svg}" alt="tt">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">TT</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">                 
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/facebook">
+                                <img src="./images/service/facebook.svg" th:src = "@{/images/service/facebook.svg}" alt="facebook">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Facebook</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>                  
+
+                    <div class="product__item">                 
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/telegram">
+                                <img src="./images/service/telegram.svg" th:src = "@{/images/service/telegram.svg}" alt="telegram">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Telegram</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">                 
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="twitch">
+                                <img src="./images/service/twitch.svg" th:src = "@{/images/service/twitch.svg}" alt="twitch">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Twitch</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/twitter">
+                                <img src="./images/service/twitter.svg" th:src = "@{/images/service/twitter.svg}" alt="twitter">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Twitter</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/soundcloud">
+                                <img src="./images/service/soundcloud.svg" th:src = "@{/images/service/soundcloud.svg}" alt="soundcloud">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">SoundCloud</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/ok">
+                                <img src="./images/service/ok.svg" th:src = "@{/images/service/ok.svg}" alt="ok">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Одноклассники</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/likee">
+                                <img src="./images/service/likee.svg" th:src = "@{/images/service/likee.svg}" alt="likee">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Likee</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/spotify">
+                                <img src="./images/service/spotify.svg" th:src = "@{/images/service/spotify.svg}" alt="spotify">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Spotify</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/reddit">
+                                <img src="./images/service/reddit.svg" th:src = "@{/images/service/reddit.svg}" alt="reddit">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Reddit</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/linkedin">
+                                <img src="./images/service/linkedin.svg" th:src = "@{/images/service/linkedin.svg}" alt="linkedin">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">LinkedIn</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/discord">
+                                <img src="./images/service/discord.svg" th:src = "@{/images/service/discord.svg}" alt="discord">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Discord</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/clubhouse">
+                                <img src="./images/service/clubhouse.svg" th:src = "@{/images/service/clubhouse.svg}" alt="clubhouse">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">ClubHouse</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/medium">
+                                <img src="./images/service/medium.svg" th:src = "@{/images/service/medium.svg}" alt="medium">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Medium</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/quora">
+                                <img src="./images/service/quora.svg" th:src = "@{/images/service/quora.svg}" alt="quora">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Quora</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/flickr">
+                                <img src="./images/service/flickr.svg" th:src = "@{/images/service/flickr.svg}" alt="flickr">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Flickr</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/dzen">
+                                <img src="./images/service/dzen.svg" th:src = "@{/images/service/dzen.svg}" alt="dzen">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Яндекс.Дзен</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/snapchat">
+                                <img src="./images/service/snapchat.svg" th:src = "@{/images/service/snapchat.svg}" alt="snapchat">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Snapchat</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/askfm">
+                                <img src="./images/service/askfm.svg" th:src = "@{/images/service/askfm.svg}" alt="ask">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Ask.fm</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/tumblr">
+                                <img src="./images/service/tumblr.svg" th:src = "@{/images/service/tumblr.svg}" alt="tumblr">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Tumblr</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/steam">
+                                <img src="./images/service/steam.svg" th:src = "@{/images/service/steam.svg}" alt="steam">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Steam</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/google">
+                                <img src="./images/service/google.svg" th:src = "@{/images/service/google.svg}" alt="google">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Google</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/apple">
+                                <img src="./images/service/apple.svg" th:src = "@{/images/service/apple.svg}" alt="apple">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Apple</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/yandex">
+                                <img src="./images/service/yandex.svg" th:src = "@{/images/service/yandex.svg}" alt="yandex">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Yandex</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="/website_traffic">
+                                <img src="./images/service/website_traffic.svg" th:src = "@{/images/service/website_traffic.svg}" alt="traffic">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Трафик сайта</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="coub">
+                                <img src="./images/service/coub.svg" th:src = "@{/images/service/coub.svg}" alt="coub">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Coub</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="vimeo">
+                                <img src="./images/service/vimeo.svg" th:src = "@{/images/service/vimeo.svg}" alt="vimeo">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Vimeo</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/pinterest.svg" th:src = "@{/images/service/pinterest.svg}" alt="pinterest">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Pinterest</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/spreaker.svg" th:src = "@{/images/service/spreaker.svg}" alt="spreaker">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Spreaker</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/shazam.svg" th:src = "@{/images/service/shazam.svg}" alt="shazam">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Shazam</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/datpiff.svg" th:src = "@{/images/service/datpiff.svg}" alt="datpiff">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">DatPiff</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/cian.svg" th:src = "@{/images/service/cian.svg}" alt="cian">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Циан</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/mixcloud.svg" th:src = "@{/images/service/mixcloud.svg}" alt="mixcloud">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Mixcloud</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/imdb.svg" th:src = "@{/images/service/imdb.svg}" alt="idmb">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">IMDB</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/rottentomatoes.svg" th:src = "@{/images/service/rottentomatoes.svg}" alt="rotten">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Rotten Tomatoes</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/metacritic.svg" th:src = "@{/images/service/metacritic.svg}" alt="metacritic">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Metacritic</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/irecommend.svg" th:src = "@{/images/service/irecommend.svg}" alt="irecommend">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">irecommend</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/2gis.svg" th:src = "@{/images/service/2gis.svg}" alt="2gis">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">2Gis</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/tripadvisor.svg" th:src = "@{/images/service/tripadvisor.svg}" alt="tripadvisor">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Tripadvisor</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/yelp.svg" th:src = "@{/images/service/yelp.svg}" alt="yelp">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Yelp</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/stumbleupon.svg" th:src = "@{/images/service/stumbleupon.svg}" alt="stumbleupon">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">StumbleUpon</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/tidal.svg" th:src = "@{/images/service/tidal.svg}" alt="tidal">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Tidal</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/fyuse.svg" th:src = "@{/images/service/fyuse.svg}" alt="fyuse">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Fyuse</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/reverbnation.svg" th:src = "@{/images/service/reverbnation.svg}" alt="reverbnation">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">ReverbNation</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/flipagram.svg" th:src = "@{/images/service/flipagram.svg}" alt="flipagram">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Flipagram</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/delivery_club.svg" th:src = "@{/images/service/delivery_club.svg}" alt="deliveryclub">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Delivery Club</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__item">   
+                        <div class="product__item-block">
+                            <a class="product__item-link" href="#">
+                                <img src="./images/service/yandex_eda.svg" th:src = "@{/images/service/yandex_eda.svg}" alt="yandexfood">
+                                <div class="item__overlay">
+                                    <h3 class="item__overlay-title">Яндекс.Еда</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+
     </div>
 
 <script src="js/script.min.js"></script>

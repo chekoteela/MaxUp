@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 60 85" overflow="visible" xml:space="preserve">
+<g id="фоны">
+	<rect id="яндекс" fill="#FFE033" width="60" height="85"/>
+</g>
+<g id="лого">
+	<g id="YB">
+		
+			<linearGradient id="circle4492_1_" gradientUnits="userSpaceOnUse" x1="53.8595352" y1="-243.8545532" x2="53.8595352" y2="-222.2640381" gradientTransform="matrix(2.6571608 0 0 -2.6606176 -113.1134415 -1165.0606689)">
+			<stop  offset="0" style="stop-color:#D3D3D3"/>
+			<stop  offset="1" style="stop-color:#FCF9F9"/>
+		</linearGradient>
+		
+			<ellipse id="circle4492" fill="#FFFFFF" stroke="url(#circle4492_1_)" stroke-width="2.3268805" cx="30" cy="42.495739" rx="15.2812166" ry="15.2911558"/>
+		<path id="path4496" fill="#FF0000" d="M22.547821,32.789608l-2.8404808,2.8404808l8.3031464,8.3038139v9.8713722h4.0176506
+			v-9.8820839l8.2931061-8.2931023l-2.8404808-2.8404808l-7.4668064,7.4668045L22.547821,32.789608"/>
+	</g>
+</g>
+</svg>
