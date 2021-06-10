@@ -44,12 +44,12 @@ const validatorLogin = (contactForm, formReq, errorText) => {
                     })
                     .catch(error => console.log('error:', error));
 
-                if(request === 'OK') {
+                if(request.response === 'OK') {
                     window.location.href = '/';
-                } else if (request === "Email or password are invalid") {
+                } else if (request.response === "Email or password are invalid") {
                     alert('Почта или пароль неправильный');
                 } else {
-                    alert(request);
+                    alert(request.response);
                 }
             }
         }

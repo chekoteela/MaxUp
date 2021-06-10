@@ -42,9 +42,9 @@ const validator = (contactForm, formReq, errorText) => {
 
                 text[1].style.display = 'none';
 
-                if(request === 'OK') {
+                if(request.response === 'OK') {
                     window.location.href = '/';
-                } else if (request === "user already exist") {
+                } else if (request.response === "user already exist") {
                     text[1].textContent = 'Такой пользователь уже существует';
                     text[1].style.display = 'block';
                 } else {
