@@ -22,7 +22,7 @@ public class UsersService {
 
     public UsersEntity login(UsersEntity usersEntity) throws EmailOrPasswordAreInvalid {
         UsersEntity user = repository.findByEmailAndPassword(usersEntity.getEmail(), usersEntity.getPassword());
-       if (user == null){
+       if (repository.findByEmailAndPassword(usersEntity.getEmail(),usersEntity.getPassword()) == null){
            throw new EmailOrPasswordAreInvalid("Email or password are invalid");
        }
        return user;

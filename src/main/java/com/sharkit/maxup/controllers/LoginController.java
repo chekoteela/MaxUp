@@ -26,9 +26,10 @@ public class LoginController {
             return ResponseEntity.ok(map);
         }catch (EmailOrPasswordAreInvalid e){
             map.put("response", "Email or password are invalid");
-            return ResponseEntity.badRequest().body(e.getMessage());
+            return ResponseEntity.badRequest().body(map);
         } catch (Exception e){
-            return ResponseEntity.badRequest().body(e.getMessage());
+            map.put("response", "fail");
+            return ResponseEntity.badRequest().body(map);
         }
     }
 }
